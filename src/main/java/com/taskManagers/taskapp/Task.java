@@ -1,4 +1,4 @@
-package com.taskManagers.taskapp;
+package main.java.com.taskManagers.taskapp;
 // Define the Task class
 
 import java.net.URL;
@@ -17,21 +17,23 @@ public class Task {
         
         clearScreen();
         // To read user input
-        System.out.println("Welcome to Task Manager!");
-        System.out.println("Options: ");
-        System.out.println("1. See today's priorities");
-        System.out.println("2. See all priorities in order"); // Alert user for tasks that are due today
-        System.out.println("3. Update priorities"); // Change status of task
-        System.out.println("4. Search task by TaskNumber:");
-        System.out.println("5. Show data or progress of tasks completed");
-        System.out.println("6. Exit");
-        
+        System.out.println("========================================");
+        System.out.println("          Welcome to Task Manager!      ");
+        System.out.println("========================================");
+        System.out.println("Please select an option:");
+        System.out.println("1. View today's priorities"); // Displays tasks due today
+        System.out.println("2. View all priorities (sorted)"); // Shows all tasks sorted by priority
+        System.out.println("3. Update a task's priority or status"); // Allows status update
+        System.out.println("4. Search for a task by Task Number"); // Searches by task identifier
+        System.out.println("5. View progress and completed tasks data"); // Shows stats/progress
+        System.out.println("6. Exit Task Manager");
+        System.out.println("========================================");
         System.out.print("Enter your choice: ");
         int option = 0;
        
         while(option != 6) {
             while (true) { // Loop until valid input is provided
-                System.out.print("Enter a number between 1 and 7: ");
+                System.out.print("Enter a number between 1 and 6: ");
 
                 
                 if (scanner.hasNextInt()) { // Check if input is an integer
@@ -39,7 +41,7 @@ public class Task {
                     if (option >= 1 && option <= 7) { // Check if it's in the valid range
                         break; // Exit loop if valid
                     } else {
-                        System.out.println("Invalid option. Please enter a number between 1 and 7.");
+                        System.out.println("Invalid option. Please enter a number between 1 and 6.");
                     }
                 } else {
                     System.out.println("Invalid input. Please enter an integer.");
@@ -53,9 +55,10 @@ public class Task {
                 displayTodaysPriority(date);
                 int enter = 0;
                 while(enter != 1){
-                    System.out.println("Press 1 to go back to main menu");
+                    System.out.println("Press 1 to return to the main menu");
                     enter = scanner.nextInt();
                 }
+                clearScreen();
             
             }
             if(option == 2) {
@@ -64,24 +67,24 @@ public class Task {
                 displayAllTasks();
                 int enter = 0;
                 while(enter != 1){
-                    System.out.println("Press 1 to go back to main menu");
+                    System.out.println("Press 1 to return to the main menu");
                     enter = scanner.nextInt();
                 }
+                clearScreen();
                 
             }
             if(option == 3) {  
                 clearScreen(); 
                 System.out.println("Edit Task Manager");
                 editTask();
-                int enter = 0;
-                while(enter != 1){
-                    System.out.println("Press 1 to go back to main menu");
-                    enter = scanner.nextInt();
-                }
+                clearScreen();
                 
             }
             if(option == 4) {
                 clearScreen();
+                System.out.println("========================================");
+                System.out.println("         Search Task by Task Number     ");
+                System.out.println("========================================");            
                 System.out.println("Search specific task by Number");
                 System.out.println("Enter the task number you want to search:");
                 int taskNumber = 0;
@@ -102,33 +105,38 @@ public class Task {
                 searchTask(taskNumber);
                 int enter = 0;
                 while(enter != 1){
-                    System.out.println("Press 1 to go back to main menu");
+                    System.out.println("Press 1 to return to the main menu");
                     enter = scanner.nextInt();
                 }
+                clearScreen();
                 
             }
             if(option == 5) {
                 clearScreen();
                 System.out.println("IN PROGRESS..........");
                 // showProgress();
+                clearScreen();
                 
             }
             if(option == 6) {
                 System.out.println("Exiting Task Manager. Goodbye!");
+                clearScreen();
                 break;
+                
             }
             option = 0;
-            System.out.println();
-            System.out.println();
-            System.out.println();
-            System.out.println("Welcome to Task Manager!");
-            System.out.println("Options: ");
-            System.out.println("1. See today's priorities");
-            System.out.println("2. See all priorities in order"); // Alert user for tasks that are due today
-            System.out.println("3. Update priorities"); // Change status of task
-            System.out.println("4. Search task by TaskNumber:");
-            System.out.println("5. Show data or progress of tasks completed");
-            System.out.println("6. Exit");
+            System.out.println("========================================");
+            System.out.println("          Welcome to Task Manager!      ");
+            System.out.println("========================================");
+            System.out.println("Please select an option:");
+            System.out.println("1. View today's priorities"); // Displays tasks due today
+            System.out.println("2. View all priorities (sorted)"); // Shows all tasks sorted by priority
+            System.out.println("3. Update a task's priority or status"); // Allows status update
+            System.out.println("4. Search for a task by Task Number"); // Searches by task identifier
+            System.out.println("5. View progress and completed tasks data"); // Shows stats/progress
+            System.out.println("6. Exit Task Manager");
+            System.out.println("========================================");
+            System.out.print("Enter your choice: ");
             
         }
         scanner.close(); // Close the scanner
@@ -148,13 +156,16 @@ public class Task {
     }
 
     public void editTask() {
-        System.out.println("Options: ");
-        System.out.println("1. Add a task");
-        System.out.println("2. Update a task");
-        System.out.println("3. Delete a task");
-        System.out.println("4. Mark a task as done");
-        System.out.println("5. Exit");
-        System.out.print("Enter your choice: ");
+        System.out.println("========================================");
+        System.out.println("          Task Editing Options          ");
+        System.out.println("========================================");
+        System.out.println("1. Add a Task");  
+        System.out.println("2. Update a Task");  
+        System.out.println("3. Delete a Task");  
+        System.out.println("4. Mark a Task as Done");  
+        System.out.println("5. Exit Editing");  
+        System.out.println("========================================");
+        System.out.print("Enter your choice: ");  
         
         int option = 0;
         while (true) {
@@ -170,8 +181,11 @@ public class Task {
                 scanner.next(); // Discard invalid input
             }
         }
+        clearScreen();
         if(option == 1){
-           
+            System.out.println("========================================");
+            System.out.println("            Add a New Task              ");
+            System.out.println("========================================");
             System.out.println("Enter the name of the task:");
             String name = scanner.next();
             scanner.nextLine();
@@ -274,32 +288,129 @@ public class Task {
            
         }
         if(option == 2){
-        System.out.println("Enter the task number you want to update:");
-        int taskNum = scanner.nextInt();
-        scanner.nextLine();
-        boolean if_exist = Database_Manager.taskFinder(taskNum);
-
-        if (if_exist == false) {
-            System.out.println("Task does not exist");
-
-        }
+            System.out.println("========================================");
+            System.out.println("         Update an Existing Task         ");
+            System.out.println("========================================");
+            System.out.println("Enter the task number you want to update:");
+            int taskNum = scanner.nextInt();
+            scanner.nextLine();
+            boolean if_exist = Database_Manager.taskFinder(taskNum);
+            while(if_exist == false){
+                System.out.println("Task does not exist! ");
+                System.out.println("Enter the task number you want to update:");
+                taskNum = scanner.nextInt();
+                scanner.nextLine();
+                if_exist = Database_Manager.taskFinder(taskNum);
+            }
         System.out.println("Task Found!");
-        Database_Manager.viewTask(taskNum);
+        System.out.println("----------------------------------------");
+        System.out.println("Enter the new details for the task:");
+        System.out.println("----------------------------------------");
         System.out.println("Enter the new name of the task:");
-        String name = scanner.next();
-        System.out.println("Enter the new due date of the task Format (YYYY-MM-DD):");
-        String dueDate = scanner.next();
-        System.out.println("Enter the new priority of the task (OPTIONS: LOW, MEDIUM, HIGH):");
-        String priority = scanner.next();
-        System.out.println("Enter the new status of the task (OPTION:DONE,NOT DONE, IN PROGRESS):");
-        String status = scanner.next();
-        System.out.println("Enter the new type of the task (OPTIONS:HOME,WORK,SCHOOL,PERSONAL):");
-        String type = scanner.next();
+            String name = scanner.next();
+            scanner.nextLine();
+            System.out.println("Enter the new due date of the task Format (YYYY-MM-DD):");
+            String dueDate = scanner.next();
+            scanner.nextLine();
+            System.out.println("Enter the new priority of the task:");
+            System.out.println("Choose from the following options:");
+            System.out.println("1.LOW");
+            System.out.println("2.MEDIUM");
+            System.out.println("3.HIGH");
+            int choice = 0;
+            while (true) {
+                if (scanner.hasNextInt()) { // Check if the input is an integer
+                    choice = scanner.nextInt();
+                    if (choice > 0 && choice < 4) { // Validate range
+                        break; // Exit the loop if valid
+                    } else {
+                        System.out.print("Invalid option. Please enter a number between 1 and 3: ");
+                    }
+                } else {
+                    System.out.print("Invalid input. Please enter a number between 1 and 3: ");
+                    scanner.next(); // Discard invalid input
+                }
+            }
+            String priority = "";
+            if(choice == 1){
+                priority = "LOW";
+            }
+            if(choice == 2){
+                priority = "MEDIUM";
+            }
+            if(choice == 3){
+                priority = "HIGH";
+            }
+            scanner.nextLine();
+            System.out.println("Enter the new status of the task:");
+            System.out.println("Choose from the following options:");
+            System.out.println("1.DONE");
+            System.out.println("2.NOT DONE");
+            System.out.println("3.IN PROGRESS");
+            choice = 0;
+            while (true) {
+                if (scanner.hasNextInt()) { // Check if the input is an integer
+                    choice = scanner.nextInt();
+                    if (choice > 0 && choice < 4) { // Validate range
+                        break; // Exit the loop if valid
+                    } else {
+                        System.out.print("Invalid option. Please enter a number between 1 and 3: ");
+                    }
+                } else {
+                    System.out.print("Invalid input. Please enter a number between 1 and 3: ");
+                    scanner.next(); // Discard invalid input
+                }
+            }
+            String status = "";
+            if(choice == 1){
+                status = "DONE";
+            }
+            if(choice == 2){
+                status = "NOT DONE";
+            }
+            if(choice == 3){
+                status = "IN PROGRESS";
+            }
+
+            scanner.nextLine();
+            System.out.println("Enter the new type of the task:");
+            System.out.println("Choose from the following options:");
+            System.out.println("1.SCHOOL");
+            System.out.println("2.WORK");
+            System.out.println("3.PERSONAL");
+            choice = 0;
+            while (true) {
+                if (scanner.hasNextInt()) { // Check if the input is an integer
+                    choice = scanner.nextInt();
+                    if (choice > 0 && choice < 4) { // Validate range
+                        break; // Exit the loop if valid
+                    } else {
+                        System.out.print("Invalid option. Please enter a number between 1 and 3: ");
+                    }
+                } else {
+                    System.out.print("Invalid input. Please enter a number between 1 and 3: ");
+                    scanner.next(); // Discard invalid input
+                }
+            }
+            String type = "";
+            if(choice == 1){
+                type = "SCHOOL";
+            }
+            if(choice == 2){
+                type = "WORK";
+            }
+            if(choice == 3){
+                type = "PERSONAL";
+            }
+            scanner.nextLine();
         Database_Manager.deleteFromDatabase(taskNum);
         Database_Manager.addToDatabase(name, dueDate, priority, status, type);
         System.out.println("Task updated successfully!");
     }
     if(option == 3){
+        System.out.println("========================================");
+        System.out.println("          Delete an Existing Task        ");
+        System.out.println("========================================");
         Database_Manager.viewDatabase();
         System.out.println("Enter the task number you want to delete:");
         int taskNum = 0;
@@ -328,6 +439,10 @@ public class Task {
         System.out.println("Task deleted successfully!");
     }
     if(option == 4){
+        System.out.println("========================================");
+        System.out.println("          Mark Task as Done              ");
+        System.out.println("========================================");
+
         System.out.println("Enter the task number you want to mark as done:");
         int taskNum = 0;
         while (true) {
@@ -349,8 +464,8 @@ public class Task {
             
         }
         Database_Manager.markAsDone(taskNum);
+        System.out.println("Task marked as done successfully!");
     }
-  
         
     }
 

@@ -35,4 +35,4 @@ run {
     standardOutput = System.out
     errorOutput = System.err
 }
-mainClassName = 'com.taskManagers.taskapp.main'
+mainClassName = 'main.java.com.taskManagers.taskapp.main'

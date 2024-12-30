@@ -1,4 +1,4 @@
-package com.taskManagers.taskapp;
+package main.java.com.taskManagers.taskapp;
 
 public class Schedule {
 

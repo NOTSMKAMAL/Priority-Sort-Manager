@@ -1,4 +1,4 @@
-package com.taskManagers.taskapp;
+package main.java.com.taskManagers.taskapp;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -22,6 +22,7 @@ public class Database_Manager {
             // Step 1: Establish a connection
             connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
             System.out.println("Connected to the database!");
+            
 
             // Step 2: Create a statement
             statement = connection.createStatement();
@@ -60,6 +61,7 @@ public class Database_Manager {
             // Step 1: Establish a connection
             connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
             System.out.println("Connected to the database!");
+
 
             // Step 2: Create a statement
             statement = connection.createStatement();

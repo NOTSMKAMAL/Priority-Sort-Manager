@@ -35,8 +35,7 @@ A simple, distraction-free terminal-based task manager to help you focus on your
 
 --------------------------------------------------------------------------------
 
-<img src="![Screenshot 2024-12-30 021958](https://github.com/user-attachments/assets/c84c310a-8c37-494a-a75d-23219f52e376)
-" width="500" alt="Main Menu Display">
+<img src="https://github.com/user-attachments/assets/c84c310a-8c37-494a-a75d-23219f52e376" width="500" alt="Main Menu Display">
 
 -------------------------------------------------------------------------------
 
@@ -44,15 +43,15 @@ A simple, distraction-free terminal-based task manager to help you focus on your
 
 -------------------------------------------------------------------------------
 
-<img src="![Screenshot 2024-12-30 022019](https://github.com/user-attachments/assets/e5fb1d19-445e-41c6-b5b7-002e4c2f7829)" width="500" alt="Display Tasks">
+<img src="https://github.com/user-attachments/assets/e5fb1d19-445e-41c6-b5b7-002e4c2f7829" width="500" alt="Display Tasks">
 
 -------------------------------------------------------------------------------
 
-3.Data is saved in the MySQL database which persists between sessions and can be edited with the program.
+3. Data is saved in the MySQL database which persists between sessions and can be edited with the program.
 
 -------------------------------------------------------------------------------
 
-<img src="![Screenshot 2024-12-30 022045](https://github.com/user-attachments/assets/cebf3921-3b41-4ba0-980d-fee690226bb6)" width="500" alt="Display Tasks">
+<img src="https://github.com/user-attachments/assets/cebf3921-3b41-4ba0-980d-fee690226bb6" width="500" alt="Database Task Display">
 
 -------------------------------------------------------------------------------
 

@@ -23,10 +23,12 @@ A simple, distraction-free terminal-based task manager to help you focus on your
    git clone https://github.com/NOTSMAK/Priority-Sort-Manager.git
    cd Priority-Sort-Manager
    
-3. Build The Project
+3. Set up a MySQL Local Server and Update the information in TaskManager.java.
+   
+4. Build The Project
   ./gradlew build
 
-4. Run
+5. Run
    ./gradlew run
 
 ### Useage 

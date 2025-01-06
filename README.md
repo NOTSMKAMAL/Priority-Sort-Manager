@@ -23,10 +23,12 @@ A simple, distraction-free terminal-based task manager to help you focus on your
    git clone https://github.com/NOTSMAK/Priority-Sort-Manager.git
    cd Priority-Sort-Manager
    
-3. Build The Project
+3. Set up a MySQL Local Server and Update the information in TaskManager.java.
+   
+4. Build The Project
   ./gradlew build
 
-4. Run
+5. Run
    ./gradlew run
 
 ### Useage 
@@ -34,18 +36,26 @@ A simple, distraction-free terminal-based task manager to help you focus on your
 1. Run the program and select an option from the main menu:
 
 --------------------------------------------------------------------------------
-Welcome to Task Manager!
-Options:
-1. See today's priorities
-2. See all priorities in order
-3. Update priorities
-4. Search task by TaskNumber
-5. Show data or progress of tasks completed
-6. Exit
+
+<img src="https://github.com/user-attachments/assets/c84c310a-8c37-494a-a75d-23219f52e376" width="500" alt="Main Menu Display">
+
 -------------------------------------------------------------------------------
-2. Follow the prompts to manage your tasks effectively.
-   
-3.Data is saved in the MySQL database and persists between sessions.
+
+2. Follow the prompts to manage and display your tasks effectively.
+
+-------------------------------------------------------------------------------
+
+<img src="https://github.com/user-attachments/assets/e5fb1d19-445e-41c6-b5b7-002e4c2f7829" width="500" alt="Display Tasks">
+
+-------------------------------------------------------------------------------
+
+3. Data is saved in the MySQL database which persists between sessions and can be edited with the program.
+
+-------------------------------------------------------------------------------
+
+<img src="https://github.com/user-attachments/assets/cebf3921-3b41-4ba0-980d-fee690226bb6" width="500" alt="Database Task Display">
+
+-------------------------------------------------------------------------------
 
 
 ### COMNG SOON 

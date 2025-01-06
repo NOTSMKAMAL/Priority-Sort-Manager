@@ -233,8 +233,9 @@ public class Database_Manager {
             statement = connection.createStatement();
 
             // Step 3: Execute a query to read data
-            String query = "SELECT * FROM tasks WHERE dueDate = '" + date + "'";
+            String query = "SELECT * FROM tasks WHERE dueDate = '" + date + "' OR Priority = 'HIGH'";
             ResultSet resultSet = statement.executeQuery(query);
+           
 
             // Step 5: Process the result set
             System.out.println("Today's Tasks:");

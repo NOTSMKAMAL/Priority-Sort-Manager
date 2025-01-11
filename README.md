@@ -1,6 +1,6 @@
 # Priority-Sort-Manager
 
-A simple, distraction-free terminal-based task manager to help you focus on your priorities without colorful distractions or unnecessary clutter.
+A simple, distraction-free terminal-based task manager to help focus on your priorities without colorful distractions or unnecessary clutter.
 
 
 ## Features

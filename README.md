@@ -43,14 +43,14 @@ Environment variables (or a `.env` file in the project root) control external se
 When the MySQL connection is unavailable, the application logs a warning and switches to the in-memory repository seeded with sample data. Weather output falls back from OpenWeather to wttr.in and ultimately to �unavailable�.
 
 ## Terminal Commands
-- `A` / `add` � Guided task entry (blank input cancels at any step)
-- `E` / `edit` � Modify task details by task number
-- `D` / `done` � Mark a task complete
-- `S` / `search <text>` � Search by title or tags
-- `filter priority=P1 status=open due=week` � Combined filters
-- `T` / `today` � Return to the Today view
-- `?` / `help` � Show in-app command reference
-- `Q` / `quit` � Exit the application
+- `A` / `add`  Guided task entry (blank input cancels at any step)
+- `E` / `edit`  Modify task details by task number
+- `D` / `done`  Mark a task complete
+- `S` / `search <text>`  Search by title or tags
+- `filter priority=P1 status=open due=week`  Combined filters
+- `T` / `today`  Return to the Today view
+- `?` / `help` Show in-app command reference
+- `Q` / `quit`  Exit the application
 
 ## Database Schema
 The MySQL backend expects a `tasks` table similar to:

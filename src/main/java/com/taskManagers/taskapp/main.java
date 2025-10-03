@@ -1,13 +1,14 @@
-package main.java.com.taskManagers.taskapp;
+package com.taskManagers.taskapp;
 
-
-
-public class main {
+public class Main {
     public static void main(String[] args) {
-        // Call the viewDatabase method
-        
-        Task taskManager = new Task();
-        taskManager.displayOptions();
-        
+        TaskAppConfig config = TaskAppConfigLoader.load(args);
+        WeatherService weatherService = new WeatherService(config);
+        try (TaskStore taskStore = TaskStoreFactory.create(config)) {
+            Task taskApp = new Task(config, taskStore, weatherService);
+            taskApp.run();
+        } catch (Exception ex) {
+            System.err.println("Failed to start application: " + ex.getMessage());
+        }
     }
 }

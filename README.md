@@ -40,17 +40,17 @@ Environment variables (or a `.env` file in the project root) control external se
 | `CITY` | Single city or `;`-delimited list (e.g. `Riverside,CA;Los Angeles,CA`) | `Riverside,CA;Los Angeles,CA` |
 | `NO_COLOR` | Set to `true` to disable ANSI colors | `false` |
 
-When the MySQL connection is unavailable, the application logs a warning and switches to the in-memory repository seeded with sample data. Weather output falls back from OpenWeather to wttr.in and ultimately to “unavailable”.
+When the MySQL connection is unavailable, the application logs a warning and switches to the in-memory repository seeded with sample data. Weather output falls back from OpenWeather to wttr.in and ultimately to ï¿½unavailableï¿½.
 
 ## Terminal Commands
-- `A` / `add` – Guided task entry (blank input cancels at any step)
-- `E` / `edit` – Modify task details by task number
-- `D` / `done` – Mark a task complete
-- `S` / `search <text>` – Search by title or tags
-- `filter priority=P1 status=open due=week` – Combined filters
-- `T` / `today` – Return to the Today view
-- `?` / `help` – Show in-app command reference
-- `Q` / `quit` – Exit the application
+- `A` / `add` ï¿½ Guided task entry (blank input cancels at any step)
+- `E` / `edit` ï¿½ Modify task details by task number
+- `D` / `done` ï¿½ Mark a task complete
+- `S` / `search <text>` ï¿½ Search by title or tags
+- `filter priority=P1 status=open due=week` ï¿½ Combined filters
+- `T` / `today` ï¿½ Return to the Today view
+- `?` / `help` ï¿½ Show in-app command reference
+- `Q` / `quit` ï¿½ Exit the application
 
 ## Database Schema
 The MySQL backend expects a `tasks` table similar to:

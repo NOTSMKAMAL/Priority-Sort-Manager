@@ -36,7 +36,6 @@ Environment variables (or a `.env` file in the project root) control external se
 | `DB_URL` | JDBC connection string | `jdbc:mysql://localhost:3306/task_manager` |
 | `DB_USER` | Database username | `root` |
 | `DB_PASS` | Database password | *(blank)* |
-| `OPENWEATHER_API_KEY` | OpenWeather API key | *(not set)* |
 | `CITY` | Single city or `;`-delimited list (e.g. `Riverside,CA;Los Angeles,CA`) | `Riverside,CA;Los Angeles,CA` |
 | `NO_COLOR` | Set to `true` to disable ANSI colors | `false` |
 

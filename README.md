@@ -67,7 +67,5 @@ CREATE TABLE tasks (
 ## Development
 - Run `./gradlew run --console=plain` if you prefer Gradle output without progress indicators.
 - New features should include corresponding JUnit tests (see `src/test/java`).
-- The project targets Java 21; use the provided Gradle wrapper to avoid version drift.
-
 ---
-Feel free to fork, customize the data layer, or plug the CLI into your own productivity tooling.
+
